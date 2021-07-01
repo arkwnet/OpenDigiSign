@@ -1,0 +1,135 @@
+@font-face {
+  font-family: RobotoBold;
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: RobotoRegular;
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: NotoSansJPBold;
+  src: url("../fonts/NotoSansJP-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: NotoSansJPMedium;
+  src: url("../fonts/NotoSansJP-Medium.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  cursor: none !important;
+}
+
+body {
+  width: 1920px;
+  height: 1200px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#canvas {
+  display: none;
+}
+
+.main {
+  width: 1920px;
+  height: 1200px;
+  background-color: #000000;
+}
+
+.area-logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 640px;
+  height: 120px;
+  padding: 15px 10px;
+  background-color: #535c68;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 1;
+}
+
+.area-clock {
+  position: absolute;
+  left: 0;
+  top: 120px;
+  width: 640px;
+  height: 540px;
+  padding: 140px 0;
+  background-color: #eb4d4b;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 1;
+}
+
+.area-clock h1 {
+  margin-top: -20px;
+  font-size: 200px;
+  font-family: RobotoBold;
+  text-align: center;
+  color: #ffffff;
+}
+
+.area-clock h2 {
+  font-size: 54px;
+  font-family: RobotoBold, NotoSansJPBold;
+  font-weight: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.area-info {
+  position: absolute;
+  left: 0;
+  top: 660px;
+  width: 640px;
+  height: 540px;
+  padding: 40px;
+  background-color: #22a6b3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #ffffff;
+  font-size: 40px;
+  font-family: RobotoRegular, NotoSansJPMedium;
+  line-height: 52px;
+  z-index: 1;
+  position: relative;
+}
+
+.area-info-contents {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 40px;
+  display: none;
+}
+
+.area-info-contents b {
+  padding-bottom: 20px;
+  display: block;
+  font-family: RobotoBold, NotoSansJPBold;
+  font-weight: normal;
+}
+
+.area-info-contents p {
+  margin-bottom: 20px;
+}
+
+.area-info-update {
+  margin-bottom: 20px;
+}
+
+.area-image {
+  position: absolute;
+  left: 640px;
+  top: 0;
+  width: 1280px;
+  height: 1200px;
+  z-index: 0;
+}
+/*# sourceMappingURL=main.css.map */
